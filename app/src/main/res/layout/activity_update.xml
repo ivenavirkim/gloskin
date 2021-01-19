@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data!!"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_emailu"
+        android:hint="Email Here!!"
+        android:editable="false"
+        />
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_passwordu"
+        android:hint="Password Here!!"/>
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_usernameu"
+        android:hint="Username Here!!"/>
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/input_namau"
+        android:hint="Full Name Here!!"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            style="@style/btn_Style"
+            android:id="@+id/btn_update"
+            android:text="Update"
+            android:onClick="updateData"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/btn_Style"
+            android:text="Cancel"
+            android:onClick="cancelData"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
